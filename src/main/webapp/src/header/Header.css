@@ -1,0 +1,20 @@
+/* Headlines */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap');
+/* Text */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
+.navBar {
+    margin-right: 14.5em;
+}
+
+.navBar Button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14pt;
+    margin-left: 5em;
+}
+
+#title {
+    padding-left: 20px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 26pt;
+}

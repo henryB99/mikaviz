@@ -1,0 +1,40 @@
+#gallerypreview {
+    position: relative;
+}
+
+#gallery_preview_picture_0 {
+    overflow: auto;
+    position: absolute;
+    z-index: 2;
+    top: 4em;
+    left: 6em;
+}
+
+#gallery_preview_picture_1 {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    z-index: 1;
+
+}
+
+#gallery_preview_picture_2 {
+    position: absolute;
+    top: 8em;
+    left: 1em;
+    z-index: 1;
+}
+
+#gallery_preview_picture_3 {
+    position: absolute;
+    top: 1em;
+    left: 12em;
+    z-index: 0;
+}
+
+#gallery_preview_picture_4 {
+    position: absolute;
+    top: 8em;
+    left: 12em;
+    z-index: 0;
+}

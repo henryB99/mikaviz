@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
+
+body {
+    /*background: #c2c2c2;*/
+}
+
+.vertical-timeline {}
+
+.vertical-timeline::before {
+    background: black !important;
+}
+
+.vertical-timeline-element {}
+
+.vertical-timeline-element-date {
+    padding-top: 0;
+    font-family: 'Chonburi', cursive;
+    font-size: 36pt !important;
+    opacity: 1 !important;
+    color: black;
+}
+
+.vertical-timeline-element-content {
+
+}
+
+.vertical-timeline-element-title {
+
+}
+
+.vertical-timeline-element-icon {
+    box-shadow: none !important;
+}
+
+.vertical-timeline-element-icon svg {
+    /*width: 40px !important;*/
+    /*height: 40px !important;*/
+}

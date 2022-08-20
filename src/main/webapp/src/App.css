@@ -1,0 +1,16 @@
+/* Headlines */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap');
+/* Text */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
+.text {
+
+}
+
+.text p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.text h1 {
+    font-family: 'Cabin', sans-serif;
+}
