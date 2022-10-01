@@ -2,23 +2,18 @@ package de.ostfalia.ws20.teamprojekt.a6.mittellandkanalVisualisierung.applicatio
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import de.ostfalia.ws20.teamprojekt.a6.mittellandkanalVisualisierung.application.persistence.entity.MetaData;
 import de.ostfalia.ws20.teamprojekt.a6.mittellandkanalVisualisierung.application.service.MetaDataService;
-import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.util.List;
-import java.util.Map;
-
 
 @RestController
-@RequestMapping(path = "${spring.data.rest.base-path}")
+@RequestMapping(path = "${spring.data.rest.base-path}", produces = MediaType.APPLICATION_JSON_VALUE)
 public class MetaDataController {
 
     @Autowired
@@ -55,6 +50,7 @@ public class MetaDataController {
     }
 
     private String objectToBase64JsonString(Object o) throws JsonProcessingException {
-        return new String(Base64.encodeBase64(new ObjectMapper().writeValueAsString(o).getBytes()));
+        // return new String(Base64.encodeBase64(new ObjectMapper().writeValueAsString(o).getBytes()));
+        return new String(new ObjectMapper().writeValueAsString(o).getBytes());
     }
 }

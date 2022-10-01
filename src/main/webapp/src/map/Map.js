@@ -33,7 +33,8 @@ class Map extends Component {
             let decoded = JSON.parse(Rest.b64DecodeUnicode(data.data));
             let resultArray = [];
             decoded.forEach(entity => {
-                if(entity.geoKoordinateX !== 0 && entity.geoKoordinateY !== 0){
+                // if(entity.geoKoordinateX !== 0 && entity.geoKoordinateY !== 0){
+                if(entity.geoKoordinateX && entity.geoKoordinateY){
                     resultArray.push({
                         signatur: entity.signatur,
                         point: [entity.geoKoordinateX, entity.geoKoordinateY],

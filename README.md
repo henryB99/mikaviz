@@ -11,6 +11,13 @@ Open a terminal in the project root and execute
 mvn spring-boot:run
 ```
 
+## Start the web app
+Open a terminal in the project root and execute
+```bash
+cd src\main\webapp
+npm run start
+```
+
 #### Build executable jar
 Open a terminal in the project root and execute
 ```bash

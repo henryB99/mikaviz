@@ -6,23 +6,23 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "visualize_mlk_metadata")
+@Table(name = "metadata")
 public class MetaData {
 
     @Id
-    @Column
+    @Column(name = "signature")
     private Integer signatur;
 
-    @Column
+    @Column(name = "title")
     private String titel;
 
-    @Column
+    @Column(name = "year")
     private Integer laufzeit;
 
-    @Column(name = "geo_koordinate_x")
+    @Column(name = "longitude")
     private Double geoKoordinateX;
 
-    @Column(name = "geo_koordinate_y")
+    @Column(name = "latitude")
     private Double geoKoordinateY;
 
 
