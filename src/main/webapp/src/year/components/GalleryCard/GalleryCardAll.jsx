@@ -54,7 +54,7 @@ class GalleryCardAll extends Component {
 
         return (<div>
                 <Paper style={{
-                    padding: 32, position: "relative"
+                    padding: 32, position: "relative", minWidth: "max-content"
                 }}>
                     <div style={{
                         position: "absolute", top: 0, right: 0, paddingRight: "0.25rem", paddingTop: "0.25rem",
@@ -95,13 +95,11 @@ class GalleryCardAll extends Component {
                                     alignItems="flex-start"
                                 >
                                     {data.filter((element, i) => i >= this.state.page * 6 && i < this.state.page * 6 + 6).map((element, i) => {
-                                        return (
-                                            <Grid key={i} item xs={4}>
+                                        return (<Grid key={i} item xs={4}>
                                                 <GalleryCard
                                                     clickCallback={(entity) => this.handlePopupOpen(entity)}
                                                     data={element}/>
-                                            </Grid>
-                                        )
+                                            </Grid>)
                                     })}
 
                                 </Grid>
@@ -124,8 +122,7 @@ class GalleryCardAll extends Component {
                 </Paper>
                 <PopupImg open={this.state.openedEntity !== null} closeCallback={this.handlePopupClose}
                           data={this.state.openedEntity}/>
-            </div>
-        );
+            </div>);
     }
 }
 

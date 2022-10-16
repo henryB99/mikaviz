@@ -9,7 +9,6 @@ import org.springframework.web.servlet.mvc.WebContentInterceptor;
 import java.util.concurrent.TimeUnit;
 
 @Configuration
-@EnableWebMvc
 @EnableCaching
 public class WebMvcConfig implements WebMvcConfigurer {
     /**

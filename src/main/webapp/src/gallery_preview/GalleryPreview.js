@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import "./GalleryPreview.css";
-import test_picture from "./11410.jpg";
 import Rest from "../rest/Rest";
-import {CircularProgress, Grid} from "@material-ui/core";
-import GalleryCard from "../year/components/GalleryCard/GalleryCard";
+import {CircularProgress} from "@material-ui/core";
 
 class GalleryPreview extends Component {
 
@@ -12,15 +10,11 @@ class GalleryPreview extends Component {
         loading : true
     }
 
-    //HINT: Usage: <GalleryPreview year="1915/... position=""/>
-
     componentDidMount = () => {
         this.getSignaturesForTimelineFromDB(this.props.year);
     }
 
-    // max 5 zufällige Signaturen aus der DB zur gegebenen Jahreszahl abrufen
     getSignaturesForTimelineFromDB = (year) => {
-        //5 zufällige Signaturen aus Backend erhalten (GET max 5 signatures from backend for given year) -> JSON Rückgabe
         let rest = new Rest("/api/laufzeit/" + year + "/"+ 5 + "/");
         rest.get().then(data => {
             this.setState({data: JSON.parse(Rest.b64DecodeUnicode(data.data)), loading: false})

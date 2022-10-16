@@ -11,7 +11,8 @@ class YearMain extends Component {
             <div style={{
                 backgroundImage: `url(${backgroundImage})`,
                 height: "100%",
-                width: "100%"
+                width: "100%",
+                flexGrow: 1,
             }}>
                 <React.Fragment>
                     <Route exact path="/year" component={YearAll}/>
