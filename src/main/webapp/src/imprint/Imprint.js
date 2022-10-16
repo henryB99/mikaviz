@@ -23,10 +23,9 @@ class Imprint extends Component {
                         Die verwendeten Bilder und deren Informationen stammen vom <a href="https://nla.niedersachsen.de/startseite/" target="_blank">NLA Niedersachsen</a>.<br/><br/>
                         Alle Bilder können unter <a href="https://download.codingdavinci.de/index.php/s/7fddFkadWTFXc9g" target="_blank">dieser Adresse</a> abgerufen werden.<br/>
                     </p>
-                    <h1> Ersteller der Website </h1>
                     <p>
-                        Mathias Ivanov, Henry Behrend, Jeremy Käfert, Moritz Jehnert, Justin Kowitz<br/><br/>
-                        Die Umsetzung der Website erfolgte im Umfeld des CodingDaVinci-Hackathons Niedersachsen 2020.
+                        Die Umsetzung der Website erfolgte im Umfeld des CodingDaVinci-Hackathons Niedersachsen 2020 <br/>
+                        durch eine Studentengruppe der Ostfalia Hochschule für angewandte Wissenschaften.
                     </p>
                 </div>
             </div>
